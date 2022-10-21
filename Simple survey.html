@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>
+    <h1>Dixeinn's Survey</h1> 
+  </title>
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Dixeinn's Survey</h1>
+    <p id="description">A quick and easy survey on your favorite art supplies.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="full-name" id="name-label">Enter your full name: <input id="name" type="text" placeholder="Name" required /></label>
+      <label for="email" id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+     <label for="age" id="number-label">How old are you?: <input id="number" placeholder="Age" type="number" min="13" max="120" /></label>
+     </fieldset>
+     <fieldset>
+     <label for="artist?">Are you an artist?<select id="dropdown" name="artist?">
+       <option value="">(Choose one)</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+     </select>
+     
+     <fieldset>
+       <label for="interest" id="interest-label">What made you interested in art?: <textarea id="interest" name="interest" rows="3" cols="30" placeholder="What sparked your interest?."></textarea></label>
+       <label for="career" id="career-label">How long have you been making art?: <input id="career" type="text" placeholder="Years" required /></label>
+       </fieldset>
+     <fieldset>
+<p>What art medium do you use?</p>
+       <label for="digital-artist"><input type="radio" value="artist" name="artist-type" class="inline" /> Digital artist</label>
+        <label for="traditional-artist"><input type="radio" value="artist" name="artist-type" class="inline" /> Traditional artist</label>
+        <label for="other"><input type="radio" value="artist" name="artist-type" class="inline"> Other<input id="other" name="artist-type" placeholder="Specify." /></label>
+       </fieldset>
+        <fieldset>
+      <p>Do you use social media?</p> 
+      <label for="social-media"><input type="checkbox" value="social-media" name="social-media" class="inline">Yes </label>
+       <label for="social-media"><input type="checkbox" value="social-media" name="social-media" class="inline">No </label>
+       </fieldset>
+      <p>What's your social media handle?</p>
+      <textarea id="social-media" name="social-media" rows="3" cols="30" placeholder="I wish to support you."></textarea>
+  <input id="submit" type="Submit" />
+    </form>
+ </body>   
+  </html>
